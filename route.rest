@@ -1,0 +1,30 @@
+GET http://localhost:3000/subscribers
+
+###
+
+
+GET http://localhost:3000/subscribers/sdddd
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Georgios Gakidis",
+    "subscribedToNewsletter": "Buy.com"
+}
+
+
+###
+DELETE   http://localhost:3000/subscribers/61b34eb594a39e7b8ab71a20
+
+
+###
+PATCH    http://localhost:3000/subscribers/61b35acd1f3c83bd73b15477
+Content-Type: application/json
+
+{
+    "name": "NEW NAME"
+}
